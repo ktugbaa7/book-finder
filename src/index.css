@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container {
+  background-color: rgb(249, 225, 225);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./assets/bookimg.jpg");
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:aliceblue;
+}
+.searchBar {
+  width: 100%;
+}
+.form{
+  display: flex;
+	justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: auto;
+}
+.searchInput {
+  appearance: none;
+  background: none;
+  outline: none;
+  border-style: solid;
+  border-color: rgb(197, 107, 122);
+  border-width: thin;
+  display: block;
+  width: 50%;
+  padding: 16px;
+  margin-right: 6px;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.4s;
+}
+.searchInput:hover, :focus {
+  box-shadow: 0px 0px 8px 3px rgb(197, 107, 122);
+}
+.searchButton{
+  border: none;
+  display: block;
+  font-size: 16px;
+  width: 15%;
+  padding: 16px;
+  background-color: rgb(197, 107, 122);
+  color: aliceblue;
+}
+.searchButton:hover{
+  background-color: rgb(185, 85, 102);
+  box-shadow: 0px 0px 8px 3px rgb(197, 107, 122);
+  transition: 0.4s;
 }
