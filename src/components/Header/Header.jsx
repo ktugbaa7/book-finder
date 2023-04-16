@@ -2,8 +2,8 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>
-        <h1 className='header'><strong>Kitap</strong> Bul !</h1>
+    <div className='header'>
+        <h1 className='header--h'><strong>Kitap</strong> Bul !</h1>
     </div>
   )
 }

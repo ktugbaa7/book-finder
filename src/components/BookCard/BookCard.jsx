@@ -5,32 +5,41 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import img from "../../assets/bookimg.jpg";
 
-function BookCard() {
+
+function BookCard( { item } ) {
+  
   return (
     <Card
       sx={{
-        minWidth: 300,
-        maxWidth: 350,
+        width: 500,
         ":hover": {
           transition: "0.4s",
           color: "red",
+          transform: "scale(1.02)",
         },
         boxShadow: 3,
         borderRadius: 3,
+        padding: 2,
+        margin: 3,
+        border: 1,
+        borderColor: "rgb(197, 107, 122)",
+        
       }}
     >
-      <CardMedia sx={{ height: 250 }} image={img} title="books" />
+      <CardMedia sx={{ height: 250, borderRadius: 3 }}
+       image={item.volumeInfo.imageLinks // ???????
+              ? item.volumeInfo.imageLinks.thumbnail
+              : require("../../assets/bookimg.jpg")} title="books" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Javascript
+          {item.volumeInfo.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Kitap ismi
+        {item.volumeInfo.subtitle}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Kitap yazarı
+        {item.volumeInfo.authors}
         </Typography>
       </CardContent>
       <CardActions>

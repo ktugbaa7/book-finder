@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-image: url("../bookimg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.header--h {
+  color: #610404;
+  text-align: center;
+  font-size: 4.1rem;
+  font-weight: 600;
+}
+.header--h strong {
+  color: rgb(0, 0, 0);
+}
+
+.search-bar {
+  width: 100%;
+  margin-top: 20px;
+}
+.search-bar--form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+.search-bar--input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(197, 107, 122);
+  border-width: thin;
+  display: block;
+  width: 60%;
+  max-width: 500px;
+  padding: 16px;
+  margin-right: 6px;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.4s;
+}
+.search-bar--input:hover,
+.search-bar :focus {
+  box-shadow: 0px 0px 8px 3px rgb(197, 107, 122);
+}
+.search-bar--button {
+  border: none;
+  display: block;
+  width: 20%;
+  max-width: 100px;
+  padding: 9px;
+  background-color: rgb(197, 107, 122);
+  color: aliceblue;
+  border-radius: 10px;
+}
+.search-bar--button:hover {
+  background-color: rgb(185, 85, 102);
+  box-shadow: 0px 0px 8px 3px rgb(197, 107, 122);
+  transition: 0.4s;
+}
+
+.books-list {
+  margin: auto;
+  width: 90%;
+}
+.books-list--list {
+  background-color: rgba(185, 185, 185, 0.3921568627);
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
+}/*# sourceMappingURL=style.css.map */
