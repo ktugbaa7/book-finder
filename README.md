@@ -2,7 +2,7 @@
 
 
 React, GoogleBooksApi, Material UI, SCSS, Axios
-<img src="https://raw.githubusercontent.com/ktugbaa7/book-finder/master/booksdata.png" width="auto">
+<img src="https://raw.githubusercontent.com/ktugbaa7/book-finder/master/bookssearch.png" width="auto">
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
