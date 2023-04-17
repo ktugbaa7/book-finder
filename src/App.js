@@ -25,7 +25,7 @@ function App() {
                 </div>
               }
             />
-            <Route path="/details" element={<BookDetails />} />
+            {/* <Route path="/details" element={<BookDetails />} /> */}
           </Routes>
           <Footer />
         </div>

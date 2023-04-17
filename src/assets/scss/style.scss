@@ -8,15 +8,16 @@
 }
 .container {
  width: 100%;
+ height: 100vh;
 }
 .header {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   background-image: url("../bookimg.jpg"); 
   background-position: center;
   background-size: cover; 
   &--h {
-    color: #610404;
+    color: #d15050;
     text-align: center;
     font-size: 4.1rem;
     font-weight: 600;
@@ -41,22 +42,21 @@
     appearance: none;
     background: none;
     outline: none;
-    border-radius: 10px;
     border-style: solid;
-    border-color: rgb(197, 107, 122);
+    border-color: rgb(148, 148, 148);
     border-width: thin;
     display: block;
     width: 60%;
     max-width: 500px;
     padding: 16px;
     margin-right: 6px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.596);
     font-size: 16px;
     transition: 0.4s;
   }
   &--input:hover,
   :focus {
-    box-shadow: 0px 0px 8px 3px rgb(197, 107, 122);
+    box-shadow: 0px 0px 8px 3px rgba(225, 127, 127, 0.772);
   }
   &--button {
     border: none;
@@ -64,23 +64,28 @@
     width: 20%;
     max-width: 100px;
     padding: 9px;
-    background-color: rgb(197, 107, 122);
+    background-color: rgb(148, 148, 148);
     color: aliceblue;
-    border-radius: 10px;
+  
   }
   &--button:hover {
-    background-color: rgb(185, 85, 102);
-    box-shadow: 0px 0px 8px 3px rgb(197, 107, 122);
+    background-color: rgba(225, 127, 127);
+    box-shadow: 0px 0px 8px 3px rgba(225, 127, 127, 0.772);
     transition: 0.4s;
   }
 }
 .books-list {
- margin: auto;
-  width: 90%;
-
+  margin: auto;
+  width: 100%;
+  
   &--list {
     background-color: #b9b9b964;
-    margin-top: 20px;
-    border-radius: 10px 10px 0 0;
+    margin-top: 25px;
+    padding-bottom: 40px;
+  }
+  &--header{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }

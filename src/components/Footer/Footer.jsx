@@ -5,13 +5,14 @@ function Footer() {
   return (
     <Box
       sx={{
-        width: "90%",
+        width: "100%",
         height: "auto",
         margin: "auto",
-        marginTop: "10rem",
+        
         backgroundColor: "#b9b9b9ab",
-        paddingTop: "1rem",
-        paddingBottom: "1rem",
+        paddingTop: "3rem",
+        paddingBottom: "3rem",
+        marginBottom: "100px",
       }}
     >
       <Container maxWidth="lg">

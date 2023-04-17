@@ -23,6 +23,7 @@ function SearchBar() {
           placeholder="Search for a book..."
           value={search}
           onChange={handleChange}
+          required
         />
         <button type="submit" className="search-bar--button">
           <SearchIcon sx={{ fontSize: "30px" }}></SearchIcon>

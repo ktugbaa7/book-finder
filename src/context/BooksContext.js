@@ -6,11 +6,12 @@ const BooksContext = createContext();
 export const BooksProvider = ({ children }) => {
   const [bookData, setBookData] = useState([]);
   const [search, setSearch] = useState("");
+
   
   const getBookData = async () => {
-   
+
     try {
-      await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&maxResults=40`)
+      await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyAHSMJWRGaUJ3ILZslqea875QFk3PuGoCo`)
       .then((res) => {
         console.log(res.data.items)
         setBookData(res.data.items);
@@ -21,11 +22,11 @@ export const BooksProvider = ({ children }) => {
   };
   console.log(bookData);
 
+
   useEffect(() => {
     getBookData();
   }, [])
-
-  
+ 
 
   const values = {
     search,

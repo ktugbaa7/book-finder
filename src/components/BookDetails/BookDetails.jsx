@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import img from "../../assets/bookimg.jpg";
 
 function BookDetails() {
+  
   return (
     <React.Fragment>
       <CssBaseline />
@@ -23,10 +24,7 @@ function BookDetails() {
             </Grid>
             <Grid item xs={6}>
               <Typography sx={{ m: 2 }} variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica,
-                kljfdk slkdjflsjd kfjsdkfjksd kfjsdkfjksdl kljskdfjsdk
-                skdjfksdjf ksdjfksd.
+                Book Details
               </Typography>
             </Grid>
           </Grid>
