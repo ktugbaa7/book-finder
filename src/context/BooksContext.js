@@ -7,11 +7,12 @@ export const BooksProvider = ({ children }) => {
   const [bookData, setBookData] = useState([]);
   const [search, setSearch] = useState("");
 
+  const apiKey = process.env.REACT_APP_API_KEY;
   
   const getBookData = async () => {
 
     try {
-      await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=AIzaSyAHSMJWRGaUJ3ILZslqea875QFk3PuGoCo`)
+      await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${search}&key=${apiKey}`)
       .then((res) => {
         console.log(res.data.items)
         setBookData(res.data.items);
